@@ -6,7 +6,7 @@
 CUDA_VISIBLE_DEVICES=0 \
     deepspeed examples/evaluate.py \
     --answer_type text \
-    --model_name_or_path llama30b-lora-170k \
+    --model_name_or_path output_models/llama30b-lora-170k \
     --lora_model_path output_models/llama30b-lora-170k \
     --dataset_path data/alpaca/test \
     --prompt_structure "Input: {input}" \
